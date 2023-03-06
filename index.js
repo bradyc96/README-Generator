@@ -39,7 +39,7 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: 'What is the usage information?',
+    message: 'How do you use this app?',
   },
   {
     type: 'input',
@@ -69,7 +69,7 @@ function init() {
         .then((answers) => {
             console.log(answers)
             const PageContent = generateMarkdown(answers);
-            writeToFile('./Distribution/README.md', PageContent)
+            writeToFile('./README.md', PageContent)
         })
 }
 
